@@ -1,0 +1,27 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/FileSaver.js"></script>
+	<script src="js/ics.js"></script>
+	<script src="js/parser.js?v=1"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Add blob.js !-->
+</head>
+<body>
+	<div id="container" class="fluid-container">
+		<h3 class="text-header">Allocator Source</h3>
+		<select class="form-control" onchange="updateTrimester(this.options[this.selectedIndex].value)">
+			<option value="1">Trimester 1</option>
+			<option value="2">Trimester 2</option>
+			<option value="3">Trimester 3</option>
+		</select>
+		<textarea id="input" class="form-control" rows="5"></textarea>
+		<div class="output-buttons">
+			<button class="btn btn-outline-success" onclick="parse()">Download</button>
+		</div>
+	</div>
+</body>
+</html>
