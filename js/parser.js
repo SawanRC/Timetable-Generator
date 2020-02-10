@@ -13,6 +13,20 @@ var dates = { //Dates for all years, manually added
 			start: "11/11/19",
 			end: "02/14/20"
 		}
+	},
+	"2020": {
+		"1": {
+			start: "03/02/20", //Format: MM/DD/YY
+			end: "06/05/20"
+		},
+		"2": {
+			start: "07/06/20",
+			end: "10/09/20"
+		},
+		"3": {
+			start: "11/09/20",
+			end: "02/12/21"
+		}
 	}
 };
 
@@ -73,7 +87,7 @@ function buildCalendar(allocatorSource) {
 }
 
 function parse() {
-	buildCalendar($("#input").val()).download("Allocator-T" + selectedTri + "-2019");
+	buildCalendar($("#input").val()).download("Allocator-T" + selectedTri + "-" + new Date().getFullYear());
 }
 
 function updateTrimester(tri) {
