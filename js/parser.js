@@ -17,15 +17,15 @@ var dates = { //Dates for all years, manually added
 	"2020": {
 		"1": {
 			start: "03/02/20", //Format: MM/DD/YY
-			end: "06/05/20"
+			end: "06/06/20" //End dates are no inclusive, adding 1 day to correct for this
 		},
 		"2": {
 			start: "07/06/20",
-			end: "10/09/20"
+			end: "10/10/20"
 		},
 		"3": {
 			start: "11/09/20",
-			end: "02/12/21"
+			end: "02/13/21"
 		}
 	}
 };
