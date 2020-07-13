@@ -20,8 +20,8 @@ var dates = { //Dates for all years, manually added
 			end: "06/06/20" //End dates are no inclusive, adding 1 day to correct for this
 		},
 		"2": {
-			start: "07/06/20",
-			end: "10/10/20"
+			start: "07/13/20", //Other trimester dates are probably incorrect
+			end: "10/15/20"
 		},
 		"3": {
 			start: "11/09/20",
