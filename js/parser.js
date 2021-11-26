@@ -1,34 +1,4 @@
 var selectedTri = 1; //Trimester defaults to 1
-var dates = { //Dates for all years, manually added
-	"2019": {
-		"1": {
-			start: "03/04/19", //Format: MM/DD/YY
-			end: "06/07/19"
-		},
-		"2": {
-			start: "07/08/19",
-			end: "10/11/19"
-		},
-		"3": {
-			start: "11/11/19",
-			end: "02/14/20"
-		}
-	},
-	"2020": {
-		"1": {
-			start: "03/02/20", //Format: MM/DD/YY
-			end: "06/06/20" //End dates are no inclusive, adding 1 day to correct for this
-		},
-		"2": {
-			start: "07/13/20", //Other trimester dates are probably incorrect
-			end: "10/15/20"
-		},
-		"3": {
-			start: "11/09/20",
-			end: "02/13/21"
-		}
-	}
-};
 
 function parseClasses(allocatorSource) {
 	var classes = $(".TimetableName:contains('Trimester " + selectedTri + "')", $(allocatorSource)).parent(); //Parse source and select the appropriate classes from the selected trimester
